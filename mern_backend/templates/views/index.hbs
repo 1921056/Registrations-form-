@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Registration form</title>
+</head>
+<body>
+    {{!-- {{>navbar}} --}}
+    <div class="container">
+        <div class="heading">Registration</div>
+        <form action="/index" method="POST">
+            <div class="card-details">
+
+                <div class="card-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter Your Full Name " name="Fullname">
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter Your Username" name="Username">
+                </div>
+
+                <div class="card-box">
+                    <span class="details">E-mail</span>
+                    <input type="Email" placeholder="Enter Email " name="Email">
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Phone Number</span>
+                    <input type="phone" placeholder="Enter Your phone number " name="Phone">
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter Your Password " name="Password">
+                </div>
+
+                <div class="card-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder=" Confirm Password " name="Confirmpassword">
+                </div>
+
+            </div>
+            <div class="circle-form">
+                <span class="circle-title">Gender</span>
+                <div class="category">
+                    <input type="radio" name="gender"> male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+            </div>
+            </div>
+            
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
